@@ -1,0 +1,32 @@
+/* 自定义主题样式 */
+:root {
+  --vp-c-brand: #646cff;
+  --vp-c-brand-light: #747bff;
+  --vp-c-brand-lighter: #9499ff;
+  --vp-c-brand-dark: #535bf2;
+  --vp-c-brand-darker: #454ce1;
+}
+
+/* 首页样式 */
+.VPHero {
+  padding: 4rem 0;
+}
+
+.VPFeatures {
+  padding: 2rem 0;
+}
+
+/* 导航栏样式 */
+.VPNav {
+  border-bottom: 1px solid var(--vp-c-divider-light);
+}
+
+/* 侧边栏样式 */
+.VPSidebar {
+  padding: 1rem;
+}
+
+/* 文档内容样式 */
+.VPDoc {
+  padding: 2rem;
+}
