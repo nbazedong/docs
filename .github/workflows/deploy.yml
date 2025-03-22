@@ -41,7 +41,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .vitepress/dist  # 修正路径
+          path: docs/.vitepress/dist
 
   deploy:
     runs-on: ubuntu-latest
