@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: STAR
-  text: 分享、交流、学习
+  # text: 分享、交流、学习
   tagline: 快速上手，功能丰富、部署案例
   actions:
     - theme: brand
