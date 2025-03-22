@@ -17,34 +17,59 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: '指南', link: '/guide/' },
-      { text: '配置', link: '/config/' }
+      { text: 'AIGC', link: '/aigc/' },
+      { text: '技术开发', link: '/td/' },
+      { text: '智能家居', link: '/smart-home/' },
+      { text: '开源项目', link: '/open-source/' }
     ],
     sidebar: {
-      '/guide/': [
+      '/aigc/': [
         {
-          text: '入门指南',
+          text: 'AIGC',
           items: [
-            { text: '简介', link: '/guide/' },
-            { text: '快速开始', link: '/guide/getting-started' },
-            { text: '基本概念', link: '/guide/concepts' }
-          ]
-        },
-        {
-          text: '进阶使用',
-          items: [
-            { text: '自定义配置', link: '/guide/configuration' },
-            { text: '插件系统', link: '/guide/plugins' },
-            { text: 'API 使用', link: '/guide/api' }
+            { text: '简介', link: '/aigc/' },
+            { text: 'AI模型应用', link: '/aigc/models' },
+            { text: '内容生成', link: '/aigc/content-generation' },
+            { text: '图像处理', link: '/aigc/image-processing' },
+            { text: '自然语言处理', link: '/aigc/nlp' }
           ]
         }
       ],
-      '/config/': [
+      '/td/': [
         {
-          text: '配置参考',
+          text: '技术开发',
           items: [
-            { text: '基础配置', link: '/config/' },
-            { text: '高级配置', link: '/config/advanced' }
+            { text: '简介', link: '/td/' },
+            { text: '软件开发', link: '/td/software' },
+            { text: '系统架构', link: '/td/architecture' },
+            { text: '数据库', link: '/td/database' },
+            { text: '云原生', link: '/td/cloud-native' },
+            { text: 'DevOps', link: '/td/devops' }
+          ]
+        }
+      ],
+      '/smart-home/': [
+        {
+          text: '智能家居',
+          items: [
+            { text: '简介', link: '/smart-home/' },
+            { text: '智能设备', link: '/smart-home/devices' },
+            { text: '自动化场景', link: '/smart-home/automation' },
+            { text: '设备联动', link: '/smart-home/integration' },
+            { text: '家居安全', link: '/smart-home/security' },
+            { text: '能源管理', link: '/smart-home/energy' }
+          ]
+        }
+      ],
+      '/open-source/': [
+        {
+          text: '开源项目',
+          items: [
+            { text: '简介', link: '/open-source/' },
+            { text: '项目展示', link: '/open-source/projects' },
+            { text: '技术分享', link: '/open-source/tech-sharing' },
+            { text: '最佳实践', link: '/open-source/best-practices' },
+            { text: '社区贡献', link: '/open-source/contribution' }
           ]
         }
       ]
