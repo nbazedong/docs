@@ -1,7 +1,8 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  gnoreDeadLinks: true,
+  base: '/docs/',
+  ignoreDeadLinks: true,
   title: "STAR",
   description: "STAR Documentation",
 
