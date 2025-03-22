@@ -10,7 +10,7 @@ export default defineConfig({
     server: {
       port: 5174,
       host: '0.0.0.0',
-      allowedHosts: ['ai.3207778.xyz','docs.110200.xyz']
+      allowedHosts: ['ai.3207778.xyz','star.110200.xyz','docs.110200.xyz']
     }
   },
 
