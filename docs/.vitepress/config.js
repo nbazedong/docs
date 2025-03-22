@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/docs/',
+  base: '/',
   ignoreDeadLinks: true,
   title: "STAR",
   description: "STAR Documentation",
@@ -10,7 +10,7 @@ export default defineConfig({
     server: {
       port: 5174,
       host: '0.0.0.0',
-      allowedHosts: ['ai.3207778.xyz','star.110200.xyz','docs.110200.xyz']
+      allowedHosts: ['www.3207778.xyz','ai.3207778.xyz','star.110200.xyz','docs.110200.xyz']
     }
   },
 
