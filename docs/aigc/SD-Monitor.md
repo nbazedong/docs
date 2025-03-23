@@ -15,7 +15,7 @@ SD-Monitor 是一个用于监控多台 Stable Diffusion WebUI 服务器状态的
 
 1. 克隆项目
 ```bash
-git clone [项目地址]
+git clone https://github.com/nbazedong/SDMonitor.git
 cd SDMonitor
 ```
 
@@ -94,9 +94,12 @@ docker-compose up -d
 }
 ```
 
+## 监控信息项目
+- 系统信息监控需要额外在服务器上启动一个监控程序，具体配置参考 [系统信息监控服务](/aigc/SystemInfo)
+- GitHub项目地址：[SystemInfo](https://github.com/nbazedong/SystemInfo.git)
+
 注意事项：
 - 确保所有服务器的 WebUI 端口（默认17860）可访问
-- 系统信息监控需要额外的监控端口（默认5001）
 - 建议在内网环境使用，如需外网访问请做好安全防护
 
 ## 浏览器支持

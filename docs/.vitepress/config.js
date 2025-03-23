@@ -30,6 +30,7 @@ export default defineConfig({
             { text: '简介', link: '/aigc/' },
             { text: '任务大屏', link: '/aigc/ZTDataSphere' },
             { text: 'SD-Monitor', link: '/aigc/SD-Monitor' },
+            { text: 'SystemInfo', link: '/aigc/SystemInfo' },
             { text: '内容生成', link: '/aigc/content-generation' },
             { text: '图像处理', link: '/aigc/image-processing' },
             { text: '自然语言处理', link: '/aigc/nlp' }
