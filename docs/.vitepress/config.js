@@ -5,6 +5,7 @@ export default defineConfig({
   ignoreDeadLinks: true,
   title: "STAR",
   description: "STAR Documentation",
+  lang: 'zh-CN',
 
   vite: {
     server: {
@@ -25,12 +26,12 @@ export default defineConfig({
     sidebar: {
       '/aigc/': [
         {
-          text: 'AIGC',
+          // text: 'AI项目',
           items: [
-            { text: '简介', link: '/aigc/' },
-            { text: '任务大屏', link: '/aigc/ZTDataSphere' },
-            { text: 'SD-Monitor', link: '/aigc/SD-Monitor' },
-            { text: 'SystemInfo', link: '/aigc/SystemInfo' },
+            { text: 'AIGC', link: '/aigc/' },
+            { text: '数据大屏', link: '/aigc/ZTDataSphere' },
+            { text: 'SD大屏', link: '/aigc/SD-Monitor' },
+            { text: '硬件API', link: '/aigc/SystemInfo' },
             { text: '内容生成', link: '/aigc/content-generation' },
             { text: '图像处理', link: '/aigc/image-processing' },
             { text: '自然语言处理', link: '/aigc/nlp' }
@@ -78,6 +79,20 @@ export default defineConfig({
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/nbazedong' }
-    ]
+    ],
+    outline: {
+      level: [2, 3, 4],
+      // label: '页面导航'
+    },
+    docFooter: {
+      prev: '上一页',
+      next: '下一页'
+    },
+    outlineTitle: '本页目录',
+    returnToTopLabel: '返回顶部',
+    sidebarMenuLabel: '菜单',
+    darkModeSwitchLabel: '主题',
+    lightModeSwitchTitle: '切换到浅色模式',
+    darkModeSwitchTitle: '切换到深色模式'
   }
 })

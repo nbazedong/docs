@@ -1,4 +1,4 @@
-# SD-Monitor 监控面板
+# SD-Monitor
 
 ## 项目介绍
 SD-Monitor 是一个用于监控多台 Stable Diffusion WebUI 服务器状态的实时监控面板。主要功能包括：

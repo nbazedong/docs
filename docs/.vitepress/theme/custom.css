@@ -5,6 +5,105 @@
   --vp-c-brand-lighter: #9499ff;
   --vp-c-brand-dark: #535bf2;
   --vp-c-brand-darker: #454ce1;
+  --vp-layout-max-width: 2160px !important;  /* 增加最大宽度 */
+  /* --vp-content-width: 1200px !important;     增加内容区域宽度 */
+}
+
+/* 可缩放图片的悬停效果 */
+.zoomable-image {
+  transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1), 
+              box-shadow 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transform-origin: center center;
+  will-change: transform;
+  border-radius: 4px;
+}
+
+.zoomable-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 自定义图片缩放样式 */
+.custom-zoom-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--vp-c-bg);
+  opacity: 0.95;
+  z-index: 99998;
+  transition: opacity 0.3s;
+}
+
+.custom-zoom-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  transition: opacity 0.3s;
+}
+
+/* 关闭按钮样式 */
+.custom-zoom-close {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 28px;
+  line-height: 1;
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 100001;
+  user-select: none;
+}
+
+.custom-zoom-close:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scale(1.1);
+}
+
+.custom-zoomed-image {
+  cursor: grab;
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  will-change: transform;
+}
+
+.custom-zoomed-image:active {
+  cursor: grabbing;
+}
+
+.custom-zoom-hint {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--vp-c-text-1);
+  background: var(--vp-c-bg-soft);
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  opacity: 0.8;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 100000;
 }
 
 /* 首页样式 */
@@ -19,6 +118,28 @@
 /* 导航栏样式 */
 .VPNav {
   border-bottom: 1px solid var(--vp-c-divider-light);
+  width: 100%;
+}
+
+/* 响应式导航栏样式 */
+@media (max-width: 768px) {
+  .VPNavBar {
+    padding: 0 12px !important;
+  }
+  
+  .VPNavBar.has-sidebar .content {
+    padding: 0 !important;
+  }
+  
+  .VPNavBar .title {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 960px) {
+  .VPNavBar.has-sidebar .content-body {
+    padding: 0 8px !important;
+  }
 }
 
 /* 侧边栏样式 */
@@ -29,4 +150,20 @@
 /* 文档内容样式 */
 .VPDoc {
   padding: 2rem;
+}
+
+/* 调整内容区域的宽度 */
+.VPDoc.has-aside .content-container {
+  max-width: 1600px !important;
+}
+
+/* 调整侧边栏宽度 */
+.VPDoc .aside {
+  padding-left: 16px !important;
+  width: 240px !important;
+}
+
+/* 调整主内容区域的padding */
+.VPDoc .content {
+  padding: 10px 24px !important;
 }
