@@ -5,8 +5,6 @@
   --vp-c-brand-lighter: #9499ff;
   --vp-c-brand-dark: #535bf2;
   --vp-c-brand-darker: #454ce1;
-  --vp-layout-max-width: 2160px !important;  /* 增加最大宽度 */
-  /* --vp-content-width: 1200px !important;     增加内容区域宽度 */
 }
 
 /* 可缩放图片的悬停效果 */
@@ -106,64 +104,26 @@
   z-index: 100000;
 }
 
-/* 首页样式 */
-.VPHero {
-  padding: 4rem 0;
+/* 响应式图片处理 */
+.content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 4px;
 }
 
-.VPFeatures {
-  padding: 2rem 0;
-}
-
-/* 导航栏样式 */
-.VPNav {
-  border-bottom: 1px solid var(--vp-c-divider-light);
-  width: 100%;
-}
-
-/* 响应式导航栏样式 */
-@media (max-width: 768px) {
-  .VPNavBar {
-    padding: 0 12px !important;
-  }
-  
-  .VPNavBar.has-sidebar .content {
-    padding: 0 !important;
-  }
-  
-  .VPNavBar .title {
-    font-size: 16px !important;
+/* 高分辨率下的图片优化 */
+@media (min-width: 1920px) {
+  .content img[width="1000"],
+  .content img[width="1200"],
+  .content img[width="1500"] {
+    max-width: 90%;
   }
 }
 
-@media (max-width: 960px) {
-  .VPNavBar.has-sidebar .content-body {
-    padding: 0 8px !important;
-  }
-}
-
-/* 侧边栏样式 */
-.VPSidebar {
-  padding: 1rem;
-}
-
-/* 文档内容样式 */
-.VPDoc {
-  padding: 2rem;
-}
-
-/* 调整内容区域的宽度 */
-.VPDoc.has-aside .content-container {
-  max-width: 1600px !important;
-}
-
-/* 调整侧边栏宽度 */
-.VPDoc .aside {
-  padding-left: 16px !important;
-  width: 240px !important;
-}
-
-/* 调整主内容区域的padding */
-.VPDoc .content {
-  padding: 10px 24px !important;
+/* 自定义logo大小 */
+.VPNavBarTitle .logo {
+  height: 30px;
+  width: 30px;
 }
