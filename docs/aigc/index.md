@@ -2,7 +2,7 @@
 
 中台AIGC模块，涵盖大模型聊天、图像生成、视频生成、音频生成、agent应用
 
-![ai_flow](https://minio.110200.xyz:443/picgo/docs/2025/03/24/ai_flow.png)
+![whiteboard_exported_image](https://minio.110200.xyz:443/picgo/docs/2025/03/28/whiteboard_exported_image.png)
 
 ## 一、主要内容
 
