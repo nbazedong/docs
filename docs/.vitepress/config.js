@@ -7,6 +7,10 @@ export default defineConfig({
   description: "STAR Documentation",
   lang: 'zh-CN',
 
+  head: [
+    ['link', { rel: 'icon', href: '/star.ico' }]
+  ],
+
   vite: {
     server: {
       port: 5174,
