@@ -1,16 +1,16 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/',
+  base: '/docs/',
   ignoreDeadLinks: true,
   title: "STAR",
   description: "STAR Documentation",
   lang: 'zh-CN',
 
   head: [
-    ['link', { rel: 'icon', href: '../public/favicon.ico' }],
-    ['link', { rel: 'shortcut icon', href: '../public/favicon.ico' }],
-    ['link', { rel: 'icon', type: 'image/x-icon', href: '../public/favicon.ico' }]
+    ['link', { rel: 'icon', href: '/docs/favicon.ico' }],
+    ['link', { rel: 'shortcut icon', href: '/docs/favicon.ico' }],
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/docs/favicon.ico' }]
   ],
 
   vite: {
