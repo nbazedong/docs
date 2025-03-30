@@ -8,9 +8,9 @@ export default defineConfig({
   lang: 'zh-CN',
 
   head: [
-    ['link', { rel: 'icon', href: '/docs/favicon.ico' }],
-    ['link', { rel: 'shortcut icon', href: '/docs/favicon.ico' }],
-    ['link', { rel: 'icon', type: 'image/x-icon', href: '/docs/favicon.ico' }]
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'shortcut icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   ],
 
   vite: {
